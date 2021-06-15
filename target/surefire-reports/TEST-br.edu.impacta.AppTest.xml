@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.edu.impacta.AppTest" time="0.096" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.edu.impacta.AppTest" time="0.064" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.7\bin"/>
-    <property name="sun.java.command" value="C:\Users\EMILIO~1.RES\AppData\Local\Temp\surefire14727320779967633360\surefirebooter6123058658653693573.jar C:\Users\emilio.resende\AppData\Local\Temp\surefire14727320779967633360 2021-06-15T19-44-36_428-jvmRun1 surefire2377821022459688267tmp surefire_016051344039229613292tmp"/>
+    <property name="sun.java.command" value="C:\Users\EMILIO~1.RES\AppData\Local\Temp\surefire2916278308660978176\surefirebooter2866301400476782140.jar C:\Users\emilio.resende\AppData\Local\Temp\surefire2916278308660978176 2021-06-15T20-44-10_123-jvmRun1 surefire12745208831480970820tmp surefire_0970676181809197845tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\emilio.resende\Projects\impacta\pos\java\languages frameworks\a1 - data persistence\class\first-project\target\test-classes;C:\Users\emilio.resende\Projects\impacta\pos\java\languages frameworks\a1 - data persistence\class\first-project\target\classes;C:\Users\emilio.resende\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\emilio.resende\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-context\5.2.15.RELEASE\spring-context-5.2.15.RELEASE.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-aop\5.2.15.RELEASE\spring-aop-5.2.15.RELEASE.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-beans\5.2.15.RELEASE\spring-beans-5.2.15.RELEASE.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-core\5.2.15.RELEASE\spring-core-5.2.15.RELEASE.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-jcl\5.2.15.RELEASE\spring-jcl-5.2.15.RELEASE.jar;C:\Users\emilio.resende\.m2\repository\org\springframework\spring-expression\5.2.15.RELEASE\spring-expression-5.2.15.RELEASE.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\EMILIO~1.RES\AppData\Local\Temp\surefire14727320779967633360\surefirebooter6123058658653693573.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\EMILIO~1.RES\AppData\Local\Temp\surefire2916278308660978176\surefirebooter2866301400476782140.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.7+8-LTS"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="br.edu.impacta.AppTest" time="0.002"/>
+  <testcase name="shouldAnswerWithTrue" classname="br.edu.impacta.AppTest" time="0.005"/>
 </testsuite>

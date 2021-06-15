@@ -1,6 +1,7 @@
 package br.edu.impacta;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
 
 import br.edu.impacta.services.abstracts.StudentService;
 import br.edu.impacta.services.impl.StudentServiceImpl;
@@ -11,14 +12,14 @@ import br.edu.impacta.services.impl.StudentServiceImpl;
  */
 public class App 
 {
-    private static void runService() {
-        StudentService svc = new StudentServiceImpl();
+    private static void runService(GenericApplicationContext ctx) {
+        var svc = ctx.getBean(StudentService.class);
         var students = svc.findAll();
         students.forEach(System.out::println);
     }
 
-    private static void runServiceTwo() {
-        StudentService svc = new StudentServiceImpl();
+    private static void runServiceTwo(GenericApplicationContext ctx) {
+        var svc = ctx.getBean(StudentService.class);
         var students = svc.findAll();
         students.forEach(System.out::println);
     }
@@ -29,7 +30,8 @@ public class App
         appContext.registerShutdownHook();
         System.out.println("spring working...");
 
-        runService();
+        runService(appContext);
+        runServiceTwo(appContext);
 
         appContext.close();
     }
