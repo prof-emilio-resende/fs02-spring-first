@@ -22,7 +22,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return String.format("{%n name: %s %n}", this.name);
+        return String.format("{name: %s}", this.name);
     }
 
     @Override
