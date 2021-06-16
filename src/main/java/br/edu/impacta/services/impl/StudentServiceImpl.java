@@ -11,14 +11,17 @@ import org.springframework.stereotype.Service;
 
 import br.edu.impacta.factories.StudentFactory;
 import br.edu.impacta.models.Student;
+import br.edu.impacta.repositories.abstracts.StudentRepository;
 import br.edu.impacta.services.abstracts.StudentService;
 
 @Service
-@Scope(BeanDefinition.SCOPE_SINGLETON)
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class StudentServiceImpl extends StudentServiceBase implements StudentService {
     @Autowired
     @Qualifier(value = "emilioStudentFactory")
     private StudentFactory studentFactory;
+    @Autowired
+    private StudentRepository studentRepo;
 
     public StudentServiceImpl() {
         super();
@@ -29,7 +32,7 @@ public class StudentServiceImpl extends StudentServiceBase implements StudentSer
     public List<Student> findAll() {
         List<Student> students = new ArrayList<>();
         
-        students.addAll(List.of(new Student("Emilio")));
+        students.addAll(studentRepo.findAll());
         try {
             students.add(studentFactory.getObject());
         } catch (Exception e) {
